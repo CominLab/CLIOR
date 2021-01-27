@@ -1,5 +1,13 @@
 #CLIOR
 
+ Higher Recall in Metagenomic Sequence Classification Exploiting Overlapping Reads
+
+In recent years the ability to sequence microbiomic samples has enable a number of applications in different fields like ecology, medicine and microbiology. One of the most important problems is to taxonomically classify the reads extracted from a metagenomic sample. Most of the methods currently available focus on the classification of individual reads. While in terms of precision these methods have reached percentages of correctness close to perfection, in terms of recall (the actual number of classified reads) the performances fall at around 50\%. %Therefore, state-of-the-art methods are indeed capable of correctly classify only half of the reads in the sample. %Thus, how to achieve better performances in terms of overall quality of classification remains a largely unsolved problem.
+Here, we present CLIOR (CLassification Improvement with Overlapping Reads), a metagenomic classification method that exploits the information captured by the reads overlap graph of the input dataset in order to improve recall and f-measure. In fact, with CLIOR is possible to boost the performances of a state-of-the-art metagenomic classifiers by inferring and/or correcting the assignment of reads with missing or erroneous labeling.
+Results on simulated, and synthetic metagenomes show that CLIOR can improve the recall rate substantially, sometime doubling the recall, and also increases the precision on average by 8\%. Experiments on real metagenomes confirm that CLIOR is able to assign many more reads and that the abundance ratios are in line with previous studies.
+
+
+
 #Installation
 ##Download CLIOR
 [CLIOR](https://bitbucket.org/samu661/clior/downloads/CLIOR_v1.tar.gz)  
@@ -65,6 +73,7 @@ Calls algorithm where is compiled:
 [HiSeq_MiSeq_Simba5_part04](https://bitbucket.org/samu661/clior/downloads/HiSeq_MiSeq_Simba5.part04.rar)  
 
 #Publication
+
 S.Girotto, M.Comin, C.Pizzi
 *Higher recall in metagenomic sequence classification exploiting overlapping reads*  
 BMC Genomics 2017, 18 (Suppl 10) :917  
